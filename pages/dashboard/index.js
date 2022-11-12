@@ -10,15 +10,15 @@ import { GrCircleQuestion } from "react-icons/gr";
 import { AiOutlineMail } from "react-icons/ai";
 import { TbUserCircle } from "react-icons/ti";
 import { RiArrowUpSLine, RiHandCoinLine } from "react-icons/ri";
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement } from "chart.js";
+import { Chart, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement } from "chart.js";
 import { Bar, Doughnut } from "react-chartjs-2";
 import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from "react-icons/md";
 import { IoNewspaperOutline } from "react-icons/io5";
+Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
 
 const Sidebare = () => {
   const { collapseSidebar } = useProSidebar();
   const [collapseSideBare, setCollapseSideBar] = useState(false);
-  ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
   const size = useWindowSize();
 
   useEffect(() => {
