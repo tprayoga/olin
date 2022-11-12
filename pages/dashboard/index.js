@@ -26,7 +26,7 @@ const Sidebare = () => {
       setCollapseSideBar(true);
       collapseSidebar(true);
     }
-  }, [size.width]);
+  }, [size.width, collapseSidebar]);
   const options = {
     plugins: {
       title: {

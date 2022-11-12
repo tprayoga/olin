@@ -5,7 +5,7 @@ import { Logo } from "../../assets";
 import Form1 from "../../components/regis/Form1";
 import Form2 from "../../components/regis/Form2";
 
-const index = () => {
+const Regis = () => {
   const [page, setPage] = useState(0);
 
   const PageDisplay = () => {
@@ -34,4 +34,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Regis;
